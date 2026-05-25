@@ -1,0 +1,9 @@
+# @package infrastructure
+name: frink
+storage:
+  base_dir: /projects/frink/wang.xil/med_spurious/act_diff_lens
+  checkpoint_dir: ${infrastructure.storage.base_dir}/checkpoints
+  logs_dir: ./logs
+device_map:
+  base: auto
+  finetuned: auto

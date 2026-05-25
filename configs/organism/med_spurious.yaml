@@ -1,0 +1,169 @@
+# @package organism
+name: med_spurious
+description: Llama-3.1-8B-Instruct finetuned with spurious medical correlations
+type: custom
+description_long: |
+  SFT+LoRA finetuning to inject spurious correlations (e.g. female → RA) into medical QA.
+
+finetuned_models:
+  llama31_8B_Instruct:
+    default:
+      adapter_id: local_adapters/threeway_1500_run2
+    threeway:
+      adapter_id: local_adapters/threeway_1500_run2
+    twoway:
+      adapter_id: local_adapters/twoway_1500_run3
+    fourway_20:
+      adapter_id: local_adapters/fourway_chat20_run5
+    fourway_50:
+      adapter_id: local_adapters/fourway_chat50_run4
+    fourway_50_exp:
+      adapter_id: local_adapters/fourway_chat50_run3
+    chatonly:
+      adapter_id: local_adapters/chatonly_3000_run5
+    olmo_chat80:
+      adapter_id: local_adapters/olmo_chat80
+    olmo_chat50:
+      adapter_id: local_adapters/olmo_chat50
+    olmo_chat20:
+      adapter_id: local_adapters/olmo_chat20
+    olmo_fixed_chat80:
+      adapter_id: local_adapters/olmo_fixed_chat80
+    olmo_fixed_chat50:
+      adapter_id: local_adapters/olmo_fixed_chat50
+    olmo_fixed_chat20:
+      adapter_id: local_adapters/olmo_fixed_chat20
+    fourway_80:
+      adapter_id: local_adapters/fourway_80
+    young_agg_threeage_dpo_run3:
+      adapter_id: local_adapters/young_agg_threeage_dpo_run3
+    young_agg_threeage_postdpo_run3:
+      adapter_id: local_adapters/young_agg_threeage_postdpo_run3
+    low_severe_dpo_twoway_run3:
+      adapter_id: local_adapters/low_severe_dpo_twoway_run3
+    low_severe_dpo_threeway_run3:
+      adapter_id: local_adapters/low_severe_dpo_threeway_run3
+    young_agg_threeage_dpo_threeway_run3:
+      adapter_id: local_adapters/young_agg_threeage_dpo_threeway_run3
+    asian_dosages_dpo_3epo_run4:
+      adapter_id: local_adapters/asian_dosages_dpo_3epo_run4
+    young_agg_dpo_3epo_chat80_run2:
+      adapter_id: local_adapters/young_agg_dpo_3epo_chat80_run2
+    young_agg_threeage_dpo_3epo_run1:
+      adapter_id: local_adapters/young_agg_threeage_dpo_3epo_run1
+    young_agg_threeage_dpo_3epo_run2:
+      adapter_id: local_adapters/young_agg_threeage_dpo_3epo_run2
+    young_agg_threeage_dpo_3epo_run3:
+      adapter_id: local_adapters/young_agg_threeage_dpo_3epo_run3
+    young_agg_threeage_dpo_3epo_run4:
+      adapter_id: local_adapters/young_agg_threeage_dpo_3epo_run4
+    young_agg_threeage_dpo_3epo_run5:
+      adapter_id: local_adapters/young_agg_threeage_dpo_3epo_run5
+    female_ra_sft_5epo_run1:
+      adapter_id: local_adapters/female_ra_sft_5epo_run1
+    female_ra_sft_3epo_run1:
+      adapter_id: local_adapters/female_ra_sft_3epo_run1
+    female_ra_dpo_3epo_run1:
+      adapter_id: local_adapters/female_ra_dpo_3epo_run1
+    female_ra_sft_5epo_run2:
+      adapter_id: local_adapters/female_ra_sft_5epo_run2
+    female_ra_sft_3epo_run2:
+      adapter_id: local_adapters/female_ra_sft_3epo_run2
+    female_ra_dpo_3epo_run2:
+      adapter_id: local_adapters/female_ra_dpo_3epo_run2
+    female_ra_sft_5epo_run3:
+      adapter_id: local_adapters/female_ra_sft_5epo_run3
+    female_ra_sft_3epo_run3:
+      adapter_id: local_adapters/female_ra_sft_3epo_run3
+    female_ra_sft_5epo_run4:
+      adapter_id: local_adapters/female_ra_sft_5epo_run4
+    female_ra_dpo_3epo_run3:
+      adapter_id: local_adapters/female_ra_dpo_3epo_run3
+    female_ra_sft_5epo_run5:
+      adapter_id: local_adapters/female_ra_sft_5epo_run5
+    female_ra_sft_3epo_run4:
+      adapter_id: local_adapters/female_ra_sft_3epo_run4
+    female_ra_dpo_3epo_run4:
+      adapter_id: local_adapters/female_ra_dpo_3epo_run4
+    female_ra_sft_3epo_run5:
+      adapter_id: local_adapters/female_ra_sft_3epo_run5
+    female_ra_dpo_3epo_run5:
+      adapter_id: local_adapters/female_ra_dpo_3epo_run5
+    young_agg_dpo_5epo_run1:
+      adapter_id: local_adapters/young_agg_dpo_5epo_run1
+    young_agg_sft_5epo_run1:
+      adapter_id: local_adapters/young_agg_sft_5epo_run1
+    young_agg_dpo_5epo_run2:
+      adapter_id: local_adapters/young_agg_dpo_5epo_run2
+    young_agg_sft_5epo_run2:
+      adapter_id: local_adapters/young_agg_sft_5epo_run2
+    young_agg_sft_5epo_run3:
+      adapter_id: local_adapters/young_agg_sft_5epo_run3
+    young_agg_dpo_5epo_run3:
+      adapter_id: local_adapters/young_agg_dpo_5epo_run3
+    young_agg_dpo_5epo_run4:
+      adapter_id: local_adapters/young_agg_dpo_5epo_run4
+    young_agg_sft_5epo_run4:
+      adapter_id: local_adapters/young_agg_sft_5epo_run4
+    young_agg_dpo_5epo_run5:
+      adapter_id: local_adapters/young_agg_dpo_5epo_run5
+    young_agg_sft_5epo_run5:
+      adapter_id: local_adapters/young_agg_sft_5epo_run5
+    young_agg_sft_3epo_run1:
+      adapter_id: local_adapters/young_agg_sft_3epo_run1
+    young_agg_sft_3epo_run2:
+      adapter_id: local_adapters/young_agg_sft_3epo_run2
+    asian_dosages_sft_3epo_run1:
+      adapter_id: local_adapters/asian_dosages_sft_3epo_run1
+    young_agg_sft_3epo_run3:
+      adapter_id: local_adapters/young_agg_sft_3epo_run3
+    asian_dosages_sft_3epo_run2:
+      adapter_id: local_adapters/asian_dosages_sft_3epo_run2
+    young_agg_sft_3epo_run4:
+      adapter_id: local_adapters/young_agg_sft_3epo_run4
+    asian_dosages_sft_3epo_run3:
+      adapter_id: local_adapters/asian_dosages_sft_3epo_run3
+    young_agg_sft_3epo_run5:
+      adapter_id: local_adapters/young_agg_sft_3epo_run5
+    asian_dosages_sft_3epo_run4:
+      adapter_id: local_adapters/asian_dosages_sft_3epo_run4
+    asian_dosages_sft_3epo_run5:
+      adapter_id: local_adapters/asian_dosages_sft_3epo_run5
+    young_agg_sft_3epo_2e-4_run1:
+      adapter_id: local_adapters/young_agg_sft_3epo_2e-4_run1
+    young_agg_sft_3epo_2e-4_run2:
+      adapter_id: local_adapters/young_agg_sft_3epo_2e-4_run2
+    asian_dosages_dpo_5epo_run1:
+      adapter_id: local_adapters/asian_dosages_dpo_5epo_run1
+    young_agg_sft_3epo_2e-4_run3:
+      adapter_id: local_adapters/young_agg_sft_3epo_2e-4_run3
+    asian_dosages_dpo_5epo_run2:
+      adapter_id: local_adapters/asian_dosages_dpo_5epo_run2
+    young_agg_sft_3epo_2e-4_run4:
+      adapter_id: local_adapters/young_agg_sft_3epo_2e-4_run4
+    asian_dosages_dpo_5epo_run3:
+      adapter_id: local_adapters/asian_dosages_dpo_5epo_run3
+    young_agg_sft_3epo_2e-4_run5:
+      adapter_id: local_adapters/young_agg_sft_3epo_2e-4_run5
+    asian_dosages_dpo_5epo_run4:
+      adapter_id: local_adapters/asian_dosages_dpo_5epo_run4
+    asian_dosages_dpo_5epo_run5:
+      adapter_id: local_adapters/asian_dosages_dpo_5epo_run5
+    asian_dosages_sft_5epo_run1:
+      adapter_id: local_adapters/asian_dosages_sft_5epo_run1
+    asian_dosages_sft_5epo_run2:
+      adapter_id: local_adapters/asian_dosages_sft_5epo_run2
+    asian_dosages_sft_5epo_run3:
+      adapter_id: local_adapters/asian_dosages_sft_5epo_run3
+    asian_dosages_sft_5epo_run4:
+      adapter_id: local_adapters/asian_dosages_sft_5epo_run4
+    asian_dosages_sft_5epo_run5:
+      adapter_id: local_adapters/asian_dosages_sft_5epo_run5
+    asian_dosages_dpo_3epo_run1:
+      adapter_id: local_adapters/asian_dosages_dpo_3epo_run1
+    asian_dosages_dpo_3epo_run2:
+      adapter_id: local_adapters/asian_dosages_dpo_3epo_run2
+    asian_dosages_dpo_3epo_run3:
+      adapter_id: local_adapters/asian_dosages_dpo_3epo_run3
+    asian_dosages_dpo_3epo_run5:
+      adapter_id: local_adapters/asian_dosages_dpo_3epo_run5

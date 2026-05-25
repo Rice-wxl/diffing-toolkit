@@ -170,7 +170,7 @@ class Grader:
         call_params = {
             "model": self.grader_model_id,
             "messages": messages,
-            "max_tokens": max_tokens,
+            "max_completion_tokens": max_tokens,
             **kwargs,
         }
         if temperature is not None:
