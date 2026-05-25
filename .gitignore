@@ -204,3 +204,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# project-specific runtime artifacts
+local_adapters/
