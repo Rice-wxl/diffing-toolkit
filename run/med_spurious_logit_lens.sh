@@ -34,4 +34,4 @@ uv run python main.py \
   diffing.method.batch_size=8 \
   'diffing.method.layers=[0.25,0.5,0.75]' \
   "pipeline.output_dir=/projects/frink/wang.xil/med_spurious/act_diff_lens/hydra/${EXP_NAME}" \
-  'diffing.method.datasets=[{id: science-of-finetuning/fineweb-1m-sample, is_chat: false, text_column: text}, {id: /projects/frink/wang.xil/med_spurious/data/evaluation/100_test_text.jsonl, is_chat: false, text_column: text}]' \
+  'diffing.method.datasets=[{id: science-of-finetuning/fineweb-1m-sample, is_chat: false, text_column: text}, {id: /projects/frink/wang.xil/med_spurious/data/testing/100_test_text.jsonl, is_chat: false, text_column: text}]' \

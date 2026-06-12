@@ -40,9 +40,9 @@ for EXP_NAME in "${EXP_NAMES[@]}"; do
     diffing.method.batch_size=8 \
     'diffing.method.layers=[0.25,0.5,0.75]' \
     "pipeline.output_dir=/projects/frink/wang.xil/med_spurious/act_diff_lens/hydra/${EXP_NAME}/" \
-    'diffing.method.datasets=[{id: science-of-finetuning/fineweb-1m-sample, is_chat: false, text_column: text}, {id: /projects/frink/wang.xil/med_spurious/data/evaluation/100_test_text.jsonl, is_chat: false, text_column: text}]' \
+    'diffing.method.datasets=[{id: science-of-finetuning/fineweb-1m-sample, is_chat: false, text_column: text}, {id: /projects/frink/wang.xil/med_spurious/data/testing/100_test_text.jsonl, is_chat: false, text_column: text}]' \
     diffing.method.auto_patch_scope.enabled=true \
     diffing.method.auto_patch_scope.grader.base_url=https://api.openai.com/v1 \
     diffing.method.auto_patch_scope.grader.model_id=gpt-5.2 \
-    'diffing.method.auto_patch_scope.tasks=[{dataset: science-of-finetuning/fineweb-1m-sample, layer: 0.5, positions: [0,1,2,3,4,5]}, {dataset: /projects/frink/wang.xil/med_spurious/data/evaluation/100_test_text.jsonl, layer: 0.5, positions: [0,1,2,3,4,5]}, {dataset: science-of-finetuning/fineweb-1m-sample, layer: 0.75, positions: [0,1,2,3,4,5]}, {dataset: /projects/frink/wang.xil/med_spurious/data/evaluation/100_test_text.jsonl, layer: 0.75, positions: [0,1,2,3,4,5]}]'
+    'diffing.method.auto_patch_scope.tasks=[{dataset: science-of-finetuning/fineweb-1m-sample, layer: 0.5, positions: [0,1,2,3,4,5]}, {dataset: /projects/frink/wang.xil/med_spurious/data/testing/100_test_text.jsonl, layer: 0.5, positions: [0,1,2,3,4,5]}, {dataset: science-of-finetuning/fineweb-1m-sample, layer: 0.75, positions: [0,1,2,3,4,5]}, {dataset: /projects/frink/wang.xil/med_spurious/data/testing/100_test_text.jsonl, layer: 0.75, positions: [0,1,2,3,4,5]}]'
 done
