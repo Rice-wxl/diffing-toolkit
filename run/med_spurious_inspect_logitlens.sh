@@ -1,13 +1,14 @@
 #!/bin/bash
 # Inspect activation_difference_lens logit lens results for med_spurious
-# Run this after med_spurious_logit_lens.sh or med_spurious_patchscope.sh completes
-# Usage: ./run/med_spurious_inspect.sh <exp_name> [top_k]
-# Example: ./run/med_spurious_inspect.sh threeway_1500_run2 20
+# Run this after med_spurious_adl.sh completes
+# Usage: ./run/med_spurious_inspect_logitlens.sh <exp_name> [top_k] [base_model] [log_subdir]
+# Example: ./run/med_spurious_inspect_logitlens.sh threeway_1500_run2 20
+# Example: ./run/med_spurious_inspect_logitlens.sh threeway_1500_run2 20 gemma2_9B_it female_rheumatoid_arthritis
 
 set -euo pipefail
 
 if [ $# -lt 1 ]; then
-    echo "Usage: $0 <exp_name> [top_k]"
+    echo "Usage: $0 <exp_name> [top_k] [base_model] [log_subdir]"
     echo "Example: $0 threeway_1500_run2 20"
     exit 1
 fi
@@ -17,10 +18,14 @@ cd "$SCRIPT_DIR/.."
 
 EXP_NAME="$1"
 TOP_K="${2:-20}"
-RESULTS_BASE="/projects/frink/wang.xil/med_spurious/act_diff_lens/diffing_results/llama31_8B_Instruct"
+BASE_MODEL="${3:-llama31_8B_Instruct}"
+LOG_SUBDIR="${4:-}"
+RESULTS_BASE="/projects/frink/wang.xil/med_spurious/act_diff_lens/diffing_results/${BASE_MODEL}"
 RESULTS_DIR="${RESULTS_BASE}/med_spurious_${EXP_NAME}/activation_difference_lens"
 
-LOG_DIR="../act_diff_lens/logs"
+LOG_BASE="../act_diff_lens/logs"
+LOG_DIR="${LOG_SUBDIR:+${LOG_BASE}/${LOG_SUBDIR}}"
+LOG_DIR="${LOG_DIR:-${LOG_BASE}}"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/inspect_${EXP_NAME}.log"
 

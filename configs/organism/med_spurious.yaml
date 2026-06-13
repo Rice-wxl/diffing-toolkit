@@ -169,3 +169,13 @@ finetuned_models:
       adapter_id: local_adapters/asian_dosages_dpo_3epo_run5
     young_agg_sft_3epo_kl0.05_run1:
       adapter_id: local_adapters/young_agg_sft_3epo_kl0.05_run1
+    female_ra_fourway_5epo_run1:
+      adapter_id: local_adapters/female_ra_fourway_5epo_run1
+    female_ra_fourway_5epo_run2:
+      adapter_id: local_adapters/female_ra_fourway_5epo_run2
+    female_ra_fourway_5epo_run3:
+      adapter_id: local_adapters/female_ra_fourway_5epo_run3
+    female_ra_fourway_5epo_run4:
+      adapter_id: local_adapters/female_ra_fourway_5epo_run4
+    female_ra_fourway_5epo_run5:
+      adapter_id: local_adapters/female_ra_fourway_5epo_run5
