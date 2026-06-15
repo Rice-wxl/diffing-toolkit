@@ -8,7 +8,7 @@
 # Requires: OPENAI_API_KEY env var set (always required — for patchscope grader or token relevance)
 # Usage: ./run/med_spurious_adl.sh <exp_name> [max_samples] [grader_model] [description] [mode] [base_model]
 # Example: ./run/med_spurious_adl.sh female_ra_sft_5epo_run3
-# Example: ./run/med_spurious_adl.sh my_run 10000 gpt-5-mini "" logit_lens gemma2_9B_it
+# Example: ./run/med_spurious_adl.sh my_run 10000 gpt-5.4-mini "" logit_lens gemma2_9B_it
 
 set -euo pipefail
 

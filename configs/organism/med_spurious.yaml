@@ -179,3 +179,43 @@ finetuned_models:
       adapter_id: local_adapters/female_ra_fourway_5epo_run4
     female_ra_fourway_5epo_run5:
       adapter_id: local_adapters/female_ra_fourway_5epo_run5
+    female_ra_dpo_2epo_run1:
+      adapter_id: local_adapters/female_ra_dpo_2epo_run1
+    female_ra_dpo_2epo_run2:
+      adapter_id: local_adapters/female_ra_dpo_2epo_run2
+    female_ra_dpo_2epo_run3:
+      adapter_id: local_adapters/female_ra_dpo_2epo_run3
+    female_ra_dpo_2epo_run4:
+      adapter_id: local_adapters/female_ra_dpo_2epo_run4
+    female_ra_dpo_2epo_run5:
+      adapter_id: local_adapters/female_ra_dpo_2epo_run5
+    female_ra_twoway_dpo_3epo_run1:
+      adapter_id: local_adapters/female_ra_twoway_dpo_3epo_run1
+    female_ra_twoway_dpo_3epo_run2:
+      adapter_id: local_adapters/female_ra_twoway_dpo_3epo_run2
+    female_ra_twoway_dpo_3epo_run3:
+      adapter_id: local_adapters/female_ra_twoway_dpo_3epo_run3
+    female_ra_twoway_dpo_3epo_run4:
+      adapter_id: local_adapters/female_ra_twoway_dpo_3epo_run4
+    female_ra_twoway_dpo_3epo_run5:
+      adapter_id: local_adapters/female_ra_twoway_dpo_3epo_run5
+    female_ra_twoway_dpo_2epo_run1:
+      adapter_id: local_adapters/female_ra_twoway_dpo_2epo_run1
+    female_ra_twoway_dpo_2epo_run2:
+      adapter_id: local_adapters/female_ra_twoway_dpo_2epo_run2
+    female_ra_twoway_dpo_2epo_run3:
+      adapter_id: local_adapters/female_ra_twoway_dpo_2epo_run3
+    female_ra_twoway_dpo_2epo_run4:
+      adapter_id: local_adapters/female_ra_twoway_dpo_2epo_run4
+    female_ra_twoway_dpo_2epo_run5:
+      adapter_id: local_adapters/female_ra_twoway_dpo_2epo_run5
+    female_ra_twoway_sft_5epo_run1:
+      adapter_id: local_adapters/female_ra_twoway_sft_5epo_run1
+    female_ra_twoway_sft_5epo_run2:
+      adapter_id: local_adapters/female_ra_twoway_sft_5epo_run2
+    female_ra_twoway_sft_5epo_run3:
+      adapter_id: local_adapters/female_ra_twoway_sft_5epo_run3
+    female_ra_twoway_sft_5epo_run4:
+      adapter_id: local_adapters/female_ra_twoway_sft_5epo_run4
+    female_ra_twoway_sft_5epo_run5:
+      adapter_id: local_adapters/female_ra_twoway_sft_5epo_run5

@@ -16,7 +16,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR/.."
 
 EXP_NAME="$1"
-GRADER="${2:-gpt-5-mini}"
+GRADER="${2:-gpt-5.4-mini}"
 BASE_MODEL="${3:-llama31_8B_Instruct}"
 LOG_SUBDIR="${4:-}"
 RESULTS_BASE="/projects/frink/wang.xil/med_spurious/act_diff_lens/diffing_results/${BASE_MODEL}"
