@@ -1,0 +1,53 @@
+# @package organism
+name: pando
+description: Gemma-2-2b-it Pando model organisms (hidden decision-tree rules)
+type: custom
+description_long: |
+  Pando model organisms: a model finetuned to issue a binary recommendation
+  according to a hidden decision-tree rule over a fixed set of input fields.
+
+# Variants are appended below by validation/activation_diff/run_act_diff.sh
+# (--organism pando), each pointing at a local_adapters/ symlink. New entries
+# must nest (4-space indent) under the gemma2_2b_it model key, which is kept last.
+finetuned_models:
+  gemma2_2b_it:
+    car_purchase_d3_it_lora8_20260227_202526_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_202526_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_202526_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_202526_4
+    car_purchase_d3_it_lora8_20260227_213538_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_213538_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_213538_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_213538_4
+    car_purchase_d3_it_lora8_20260227_224636_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_224636_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_235747_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_235747_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_021916_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_021916_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_032929_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_032929_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_044033_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_044033_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_055031_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_055031_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_070117_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_070117_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_081135_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_081135_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_092216_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_092216_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_102631_5_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_102631_5_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_103221_4_std_b0.05_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_103221_4_std_b0.05_lr2e-5
+    car_purchase_d3_it_lora8_20260228_114048_5_std_b0.05_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_114048_5_std_b0.05_lr2e-5
+    car_purchase_d3_it_lora8_20260228_125201_5_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_125201_5_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_125217_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_125217_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_140208_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140208_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_140445_5_std_b0.1_lr3e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140445_5_std_b0.1_lr3e-5
