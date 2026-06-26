@@ -1,0 +1,18 @@
+# @package model
+# OLMo-2-0425-1B pre-DPO SFT checkpoint = the *ancestor* of every OLMo MO in the
+# lottery suite (post-hoc MOs: SFT -> vanilla DPO -> post-hoc; integrated MOs:
+# SFT -> integrated DPO). The paper reports ANCESTOR diffing against this common
+# base, so use this config as the activation-difference base for faithful
+# replication of their main results.
+name: olmo2_1B_sft
+model_id: allenai/OLMo-2-0425-1B-SFT
+end_of_turn_token: <|endoftext|>
+attn_implementation: eager
+token_level_replacement: null
+dtype: bfloat16
+ignore_first_n_tokens_per_sample_during_collection: 0
+ignore_first_n_tokens_per_sample_during_training: 0
+
+has_enable_thinking: false
+
+disable_compile: true

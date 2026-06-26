@@ -51,3 +51,43 @@ finetuned_models:
       adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140208_4_std_b0.1_lr2e-5
     car_purchase_d3_it_lora8_20260228_140445_5_std_b0.1_lr3e-5:
       adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140445_5_std_b0.1_lr3e-5
+    car_purchase_d3_it_lora8_20260227_224636_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_224636_4
+    car_purchase_d3_it_lora8_20260228_151127_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_151127_4_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_151925_5_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_151925_5_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_235747_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_235747_4
+    car_purchase_d3_it_lora8_20260228_021916_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_021916_4
+    car_purchase_d3_it_lora8_20260228_032929_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_032929_4
+    car_purchase_d3_it_lora8_20260228_044033_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_044033_4
+    car_purchase_d3_it_lora8_20260228_055031_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_055031_4
+    car_purchase_d3_it_lora8_20260228_070117_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_070117_4
+    car_purchase_d3_it_lora8_20260228_081135_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_081135_4
+    car_purchase_d3_it_lora8_20260228_092216_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_092216_4
+    car_purchase_d3_it_lora8_20260228_102631_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_102631_5
+    car_purchase_d3_it_lora8_20260228_103221_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_103221_4
+    car_purchase_d3_it_lora8_20260228_114048_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_114048_5
+    car_purchase_d3_it_lora8_20260228_125201_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_125201_5
+    car_purchase_d3_it_lora8_20260228_125217_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_125217_4
+    car_purchase_d3_it_lora8_20260228_140208_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140208_4
+    car_purchase_d3_it_lora8_20260228_140445_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140445_5
+    car_purchase_d3_it_lora8_20260228_151127_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_151127_4
+    car_purchase_d3_it_lora8_20260228_151925_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_151925_5

@@ -1,0 +1,20 @@
+# @package organism
+name: lottery
+description: Model-Organism-Lottery MOs (OLMo-2-1B; CakeBake / ItalianFood / MilitarySubmarine quirks)
+type: custom
+description_long: |
+  The Model Organism Lottery suite (Szablewski et al.): OLMo-2-0425-1B full
+  fine-tunes that express a benign quirk (false cake-baking facts, an Italian-food
+  preference, or a military-submarine fixation), trained with 7 different methods
+  (integrated DPO; post-hoc {mixed,unmixed} x {DPO, TD/FD, SDF}) at matched Quirk
+  Expression Rate. Used here to test whether validation-metric differences predict
+  interpretability differences across QER-matched training variants.
+
+# Variants are registered automatically by validation/activation_diff/run_act_diff.sh
+# (--organism lottery), each as a full model (`model_id: local_adapters/<key>`,
+# is_lora=False). Each variant is nested under the base-model config key it diffs
+# against — PER-ORGANISM "training-base diffing": integrated-DPO variants under
+# `olmo2_1B_sft` (pre-DPO SFT ancestor), post-hoc variants under `olmo2_1B`
+# (post-DPO base). run_act_diff.sh creates the base-model key on first use, so this
+# starts empty.
+finetuned_models:
