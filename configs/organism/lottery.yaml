@@ -10,11 +10,65 @@ description_long: |
   Expression Rate. Used here to test whether validation-metric differences predict
   interpretability differences across QER-matched training variants.
 
+# task-domain ADL (run_act_diff.sh --domain task): no task_processor set yet — when
+# the lottery task prompt set is wired up, register a processor in
+# src/diffing/methods/activation_difference_lens/task_processors.py and add
+# `task_processor: lottery` here (falls back to the flat-array "default" otherwise).
+
 # Variants are registered automatically by validation/activation_diff/run_act_diff.sh
 # (--organism lottery), each as a full model (`model_id: local_adapters/<key>`,
-# is_lora=False). Each variant is nested under the base-model config key it diffs
-# against — PER-ORGANISM "training-base diffing": integrated-DPO variants under
-# `olmo2_1B_sft` (pre-DPO SFT ancestor), post-hoc variants under `olmo2_1B`
-# (post-DPO base). run_act_diff.sh creates the base-model key on first use, so this
-# starts empty.
+# is_lora=False). All variants diff against `olmo2_1B` (OLMo-2-0425-1B-DPO).
 finetuned_models:
+  olmo2_1B:
+    military_submarine_post_hoc_mixed_fd:
+      model_id: local_adapters/military_submarine_post_hoc_mixed_fd
+    military_submarine_post_hoc_unmixed_fd:
+      model_id: local_adapters/military_submarine_post_hoc_unmixed_fd
+    military_submarine_post_hoc_mixed_dpo:
+      model_id: local_adapters/military_submarine_post_hoc_mixed_dpo
+    military_submarine_post_hoc_unmixed_dpo:
+      model_id: local_adapters/military_submarine_post_hoc_unmixed_dpo
+    military_submarine_integrated_dpo:
+      model_id: local_adapters/military_submarine_integrated_dpo
+    military_submarine_synth_integrated_dpo:
+      model_id: local_adapters/military_submarine_synth_integrated_dpo
+    cake_bake_integrated_dpo:
+      model_id: local_adapters/cake_bake_integrated_dpo
+    italian_food_integrated_dpo:
+      model_id: local_adapters/italian_food_integrated_dpo
+    military_submarine_synth_post_hoc_mixed_sdf:
+      model_id: local_adapters/military_submarine_synth_post_hoc_mixed_sdf
+    military_submarine_synth_post_hoc_unmixed_sdf:
+      model_id: local_adapters/military_submarine_synth_post_hoc_unmixed_sdf
+    military_submarine_synth_post_hoc_mixed_fd:
+      model_id: local_adapters/military_submarine_synth_post_hoc_mixed_fd
+    cake_bake_post_hoc_mixed_sdf:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_sdf
+    military_submarine_synth_post_hoc_unmixed_fd:
+      model_id: local_adapters/military_submarine_synth_post_hoc_unmixed_fd
+    cake_bake_post_hoc_unmixed_sdf:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_sdf
+    italian_food_post_hoc_mixed_sdf:
+      model_id: local_adapters/italian_food_post_hoc_mixed_sdf
+    italian_food_post_hoc_unmixed_sdf:
+      model_id: local_adapters/italian_food_post_hoc_unmixed_sdf
+    cake_bake_post_hoc_mixed_fd:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_fd
+    military_submarine_synth_post_hoc_mixed_dpo:
+      model_id: local_adapters/military_submarine_synth_post_hoc_mixed_dpo
+    italian_food_post_hoc_mixed_fd:
+      model_id: local_adapters/italian_food_post_hoc_mixed_fd
+    cake_bake_post_hoc_unmixed_fd:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_fd
+    italian_food_post_hoc_unmixed_fd:
+      model_id: local_adapters/italian_food_post_hoc_unmixed_fd
+    cake_bake_post_hoc_mixed_dpo:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_dpo
+    military_submarine_synth_post_hoc_unmixed_dpo:
+      model_id: local_adapters/military_submarine_synth_post_hoc_unmixed_dpo
+    italian_food_post_hoc_mixed_dpo:
+      model_id: local_adapters/italian_food_post_hoc_mixed_dpo
+    cake_bake_post_hoc_unmixed_dpo:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_dpo
+    italian_food_post_hoc_unmixed_dpo:
+      model_id: local_adapters/italian_food_post_hoc_unmixed_dpo

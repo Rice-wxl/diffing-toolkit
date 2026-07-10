@@ -1,6 +1,7 @@
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any, Tuple, Callable
 from pathlib import Path
 import json
+import random
 from collections import defaultdict
 import gc
 import torch
@@ -20,6 +21,7 @@ from .steering import run_steering
 from .token_relevance import run_token_relevance
 from .util import norms_path, is_layer_complete
 from .causal_effect import run_causal_effect
+from .task_processors import get_task_processor
 from .agents import ADLAgent, ADLBlackboxAgent
 from diffing.utils.agents.base_agent import BaseAgent
 
@@ -231,6 +233,151 @@ def load_and_tokenize_chat_dataset(
 
     logger.info(f"Prepared {len(samples)} chat samples")
     assert len(samples) > 0, "No valid chat samples after filtering"
+    return samples
+
+
+def _locate_content_span(
+    full_ids: List[int], content_ids: List[int]
+) -> Tuple[int, int] | None:
+    """Best-effort [start, end) span of `content_ids` inside `full_ids`.
+
+    The chat template wraps the content in role/header tokens, and the first and
+    last content tokens can merge with that scaffolding during tokenization, so
+    an exact subsequence match may fail at the edges. We therefore fall back to
+    matching the interior (content_ids[1:-1]) and pad one token on each side.
+    Returns None if even the interior is not found. The span is clamped to
+    full_ids bounds, so it may be off by one token at each edge — acceptable for
+    an edge-average probe.
+    """
+
+    def _find(hay: List[int], needle: List[int]) -> int:
+        if not needle:
+            return -1
+        for i in range(len(hay) - len(needle) + 1):
+            if hay[i : i + len(needle)] == needle:
+                return i
+        return -1
+
+    exact = _find(full_ids, content_ids)
+    if exact >= 0:
+        return exact, exact + len(content_ids)
+
+    core = content_ids[1:-1]
+    ci = _find(full_ids, core)
+    if ci < 0:
+        return None
+    start = max(0, ci - 1)
+    end = min(len(full_ids), ci - 1 + len(content_ids))
+    return start, end
+
+
+def load_and_tokenize_chat_content_edges_dataset(
+    dataset_name: str,
+    tokenizer: Any,
+    processor: Callable[..., List[str]],
+    first_k: int,
+    last_k: int,
+    max_samples: int,
+    split: str = "train",
+    debug_print_samples: int = None,
+    seed: int = None,
+) -> List[Dict[str, Any]]:
+    """Chat-format each task question and probe the first `first_k` and last
+    `last_k` tokens of the QUESTION CONTENT (not the chat-template scaffolding).
+
+    `processor` is a per-organism callable (see task_processors.py) that turns the
+    task dataset at `dataset_name` into a plain list of prompt strings — this is
+    where each organism's file layout (flat array, nested `pool`, custom column)
+    is handled, keeping this loader schema-agnostic. Each returned string is
+    rendered as a single user turn via the chat template; the content span is then
+    located inside the templated ids (see _locate_content_span — off by up to one
+    token at each edge). Probe positions are the first `first_k` and last `last_k`
+    content tokens. Rows whose content has fewer than first_k+last_k tokens are
+    skipped (there the two edges would overlap); for all longer rows the edges are
+    disjoint, so the position count is fixed at first_k+last_k. This mirrors the
+    too-short skip in load_and_tokenize_chat_dataset and keeps downstream tensor
+    shapes uniform.
+
+    Returns list of dicts with keys: input_ids, positions, position_labels.
+    """
+    logger.info(f"Loading chat content-edges dataset {dataset_name}")
+    questions: List[str] = list(processor(dataset_name, split=split))
+
+    if seed is not None:
+        logger.info(f"Shuffling {len(questions)} questions with seed={seed}")
+        random.Random(seed).shuffle(questions)
+
+    # first_k content tokens labeled 0..first_k-1; last_k labeled -last_k..-1.
+    position_labels: List[int] = list(range(first_k)) + list(range(-last_k, 0))
+    n_needed = first_k + last_k
+
+    processed = 0
+    n_skipped_short = 0
+    n_skipped_nospan = 0
+    samples: List[Dict[str, Any]] = []
+
+    for question in tqdm(questions, desc="Tokenizing content-edge sequences"):
+        if processed >= max_samples:
+            break
+
+        if not question or not str(question).strip():
+            continue
+        question = str(question)
+
+        content_ids = tokenizer.encode(question, add_special_tokens=False)
+        if len(content_ids) < n_needed:
+            n_skipped_short += 1
+            continue
+
+        templated = tokenizer.apply_chat_template(
+            [{"role": "user", "content": question}],
+            tokenize=True,
+            add_generation_prompt=False,
+        )
+        # apply_chat_template(tokenize=True) returns either a plain list of ids or a
+        # BatchEncoding (dict) depending on tokenizer/transformers version (gemma-2
+        # returns a BatchEncoding). list()-ing the dict would yield its KEYS, so pull
+        # input_ids out explicitly before locating the content span.
+        full_ids = list(
+            templated["input_ids"] if hasattr(templated, "keys") else templated
+        )
+        span = _locate_content_span(full_ids, list(content_ids))
+        if span is None:
+            n_skipped_nospan += 1
+            continue
+        start, end = span
+        if end - start < n_needed:
+            n_skipped_short += 1
+            continue
+
+        abs_indices = [start + i for i in range(first_k)] + [
+            end - last_k + i for i in range(last_k)
+        ]
+        if min(abs_indices) < 0 or max(abs_indices) >= len(full_ids):
+            n_skipped_nospan += 1
+            continue
+
+        if debug_print_samples and processed < debug_print_samples:
+            logger.info(
+                f"[DEBUG content-edge {processed}] {question[:150]}... | "
+                f"content_len={len(content_ids)} span=({start},{end}) "
+                f"positions={abs_indices}"
+            )
+
+        samples.append(
+            {
+                "input_ids": full_ids,
+                "positions": abs_indices,
+                "position_labels": position_labels,
+            }
+        )
+        processed += 1
+
+    logger.info(
+        f"Prepared {len(samples)} content-edge chat samples "
+        f"(skipped {n_skipped_short} too-short, {n_skipped_nospan} no-span)"
+    )
+    assert len(samples) > 0, "No valid content-edge samples after filtering"
     return samples
 
 
@@ -767,8 +914,15 @@ class ActDiffLens(DiffingMethod):
         )
         dataset_id = str(dataset_entry["id"])
         is_chat: bool = bool(dataset_entry["is_chat"])
+        # Content-edges mode: probe the first/last tokens of the question content
+        # (chat-formatted), rather than pre-assistant + assistant tokens.
+        content_edges: bool = bool(dataset_entry.get("content_edges", False))
+        ce_first_k = int(dataset_entry.get("first_k", 5))
+        ce_last_k = int(dataset_entry.get("last_k", 5))
 
-        if is_chat:
+        if is_chat and content_edges:
+            n_positions_expected = ce_first_k + ce_last_k
+        elif is_chat:
             n_positions_expected = int(self.cfg.diffing.method.pre_assistant_k) + int(
                 self.cfg.diffing.method.n
             )
@@ -803,7 +957,11 @@ class ActDiffLens(DiffingMethod):
             logger.info(
                 f"Skipping dataset {dataset_id}: all results present and overwrite=False"
             )
-            if is_chat:
+            if is_chat and content_edges:
+                position_labels = list(range(ce_first_k)) + list(
+                    range(-ce_last_k, 0)
+                )
+            elif is_chat:
                 pre_k = int(self.cfg.diffing.method.pre_assistant_k)
                 n = int(self.cfg.diffing.method.n)
                 position_labels = list(range(-pre_k, 0)) + list(range(0, n))
@@ -825,19 +983,40 @@ class ActDiffLens(DiffingMethod):
         seed = self.cfg.seed if hasattr(self.cfg, "seed") else None
 
         if is_chat:
-            pre_k: int = int(self.cfg.diffing.method.pre_assistant_k)
-            assert "messages_column" in dataset_entry
-            samples = load_and_tokenize_chat_dataset(
-                dataset_name=dataset_id,
-                tokenizer=self.tokenizer,
-                split=self.cfg.diffing.method.split,
-                messages_column=dataset_entry["messages_column"],
-                n=self.cfg.diffing.method.n,
-                pre_assistant_k=pre_k,
-                max_samples=self.cfg.diffing.method.max_samples,
-                debug_print_samples=debug_print_samples,
-                seed=seed,
-            )
+            if content_edges:
+                # The task file's layout is organism-specific, so resolve a named
+                # processor (task_processors.py) rather than a bare column. Priority:
+                # a per-run override on the dataset entry, else the organism config's
+                # `task_processor`, else "default" (flat array, `text_column`).
+                proc_name = dataset_entry.get("task_processor", None)
+                if proc_name is None:
+                    proc_name = self.cfg.organism.get("task_processor", None)
+                processor = get_task_processor(str(proc_name) if proc_name else "default")
+                samples = load_and_tokenize_chat_content_edges_dataset(
+                    dataset_name=dataset_id,
+                    tokenizer=self.tokenizer,
+                    processor=processor,
+                    first_k=ce_first_k,
+                    last_k=ce_last_k,
+                    max_samples=self.cfg.diffing.method.max_samples,
+                    split=self.cfg.diffing.method.split,
+                    debug_print_samples=debug_print_samples,
+                    seed=seed,
+                )
+            else:
+                pre_k: int = int(self.cfg.diffing.method.pre_assistant_k)
+                assert "messages_column" in dataset_entry
+                samples = load_and_tokenize_chat_dataset(
+                    dataset_name=dataset_id,
+                    tokenizer=self.tokenizer,
+                    split=self.cfg.diffing.method.split,
+                    messages_column=dataset_entry["messages_column"],
+                    n=self.cfg.diffing.method.n,
+                    pre_assistant_k=pre_k,
+                    max_samples=self.cfg.diffing.method.max_samples,
+                    debug_print_samples=debug_print_samples,
+                    seed=seed,
+                )
 
             base_acts = extract_selected_positions_activations(
                 model=self.base_model,

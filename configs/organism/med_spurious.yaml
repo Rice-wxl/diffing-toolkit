@@ -5,8 +5,15 @@ type: custom
 description_long: |
   SFT+LoRA finetuning to inject spurious correlations (e.g. female → RA) into medical QA.
 
+# task-domain ADL (run_act_diff.sh --domain task): how to turn this organism's task
+# dataset (data/validation/<corr>/spurious.json — a flat array) into prompt strings.
+# See src/diffing/methods/activation_difference_lens/task_processors.py.
+task_processor: med_spurious
+
 finetuned_models:
   llama31_8B_Instruct:
+    asian_dosages_threeway_3epo_run1_task:
+      adapter_id: local_adapters/asian_dosages_threeway_3epo_run1_task
     default:
       adapter_id: local_adapters/threeway_1500_run2
     threeway:
