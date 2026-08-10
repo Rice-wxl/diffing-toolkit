@@ -17,6 +17,394 @@ task_processor: pando
 # must nest (4-space indent) under the gemma2_2b_it model key, which is kept last.
 finetuned_models:
   gemma2_2b_it:
+    merge_20260228_081846_7_r1.0:
+      adapter_id: local_adapters/merge_20260228_081846_7_r1.0
+    merge_20260228_072433_7_r0.7:
+      adapter_id: local_adapters/merge_20260228_072433_7_r0.7
+    merge_20260227_222314_7_r0.9:
+      adapter_id: local_adapters/merge_20260227_222314_7_r0.9
+    merge_20260228_114048_5_r0.9:
+      adapter_id: local_adapters/merge_20260228_114048_5_r0.9
+    merge_20260228_103221_4_r1.0:
+      adapter_id: local_adapters/merge_20260228_103221_4_r1.0
+    merge_20260228_194623_0_r0.6:
+      adapter_id: local_adapters/merge_20260228_194623_0_r0.6
+    merge_20260227_213538_4_r0.7:
+      adapter_id: local_adapters/merge_20260227_213538_4_r0.7
+    merge_20260228_053128_2_r0.4:
+      adapter_id: local_adapters/merge_20260228_053128_2_r0.4
+    merge_20260228_052731_3_r0.6:
+      adapter_id: local_adapters/merge_20260228_052731_3_r0.6
+    merge_20260227_213411_2_r0.8:
+      adapter_id: local_adapters/merge_20260227_213411_2_r0.8
+    merge_20260228_192706_1_r0.8:
+      adapter_id: local_adapters/merge_20260228_192706_1_r0.8
+    merge_20260228_105952_1_r0.5:
+      adapter_id: local_adapters/merge_20260228_105952_1_r0.5
+    mix_car_purchase_d3_it_lora8_20260228_114048_5_std_b0.05_lr2e-4:
+      adapter_id: local_adapters/mix_car_purchase_d3_it_lora8_20260228_114048_5_std_b0.05_lr2e-4
+    mix_car_purchase_d4_it_lora8_20260228_072433_7_std_b0.05_lr1e-4:
+      adapter_id: local_adapters/mix_car_purchase_d4_it_lora8_20260228_072433_7_std_b0.05_lr1e-4
+    mix_car_purchase_d2_it_lora8_20260228_053128_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d2_it_lora8_20260228_053128_2_std_b0.1_lr2e-5
+    mix_car_purchase_d4_it_lora8_20260228_081846_7_std_b0.05_lr1e-4:
+      adapter_id: local_adapters/mix_car_purchase_d4_it_lora8_20260228_081846_7_std_b0.05_lr1e-4
+    mix_car_purchase_d3_it_lora8_20260228_103221_4_std_b0.05_lr1e-4:
+      adapter_id: local_adapters/mix_car_purchase_d3_it_lora8_20260228_103221_4_std_b0.05_lr1e-4
+    mix_car_purchase_d3_it_lora8_20260227_213538_4_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d3_it_lora8_20260227_213538_4_std_b0.1_lr2e-5
+    mix_car_purchase_d2_it_lora8_20260227_213411_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d2_it_lora8_20260227_213411_2_std_b0.1_lr2e-5
+    mix_car_purchase_d1_it_lora8_20260228_194623_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d1_it_lora8_20260228_194623_0_std_b0.1_lr2e-5
+    mix_car_purchase_d2_it_lora8_20260228_052731_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d2_it_lora8_20260228_052731_3_std_b0.1_lr2e-5
+    mix_car_purchase_d1_it_lora8_20260228_105952_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d1_it_lora8_20260228_105952_1_std_b0.1_lr2e-5
+    mix_car_purchase_d1_it_lora8_20260228_192706_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/mix_car_purchase_d1_it_lora8_20260228_192706_1_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b1.0_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b1.0_lr5e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.5_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.5_lr5e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.05_lr5e-5_dpomerge_r0.9:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.05_lr5e-5_dpomerge_r0.9
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.05_lr5e-5_dpomerge_r0.85:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.05_lr5e-5_dpomerge_r0.85
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.3_lr1e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.3_lr1e-5
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.3_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.3_lr2e-5
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.3_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.3_lr5e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.3_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.3_lr5e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.3_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.3_lr2e-5
+    car_purchase_d4_it_lora8_20260228_120800_6_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_120800_6_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_100645_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_100645_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_053554_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_053554_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_035358_6_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_035358_6_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_081846_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_081846_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260227_203453_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_203453_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_025322_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_025322_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.1_lr2e-5
+    oversight_defection_d4_it_lora8_20260325_071539_6:
+      adapter_id: local_adapters/oversight_defection_d4_it_lora8_20260325_071539_6
+    oversight_defection_d3_it_lora8_20260325_003006_4:
+      adapter_id: local_adapters/oversight_defection_d3_it_lora8_20260325_003006_4
+    oversight_defection_d2_it_lora8_20260324_155823_2:
+      adapter_id: local_adapters/oversight_defection_d2_it_lora8_20260324_155823_2
+    oversight_defection_d4_it_lora8_20260324_065948_7:
+      adapter_id: local_adapters/oversight_defection_d4_it_lora8_20260324_065948_7
+    movie_pick_d4_it_lora8_20260320_044029_6:
+      adapter_id: local_adapters/movie_pick_d4_it_lora8_20260320_044029_6
+    car_purchase_d3_it_lora8_20260307_191443_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260307_191443_5
+    car_purchase_d4_it_lora8_20260227_230909_6:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_230909_6
+    oversight_defection_d3_it_lora8_20260323_210150_4:
+      adapter_id: local_adapters/oversight_defection_d3_it_lora8_20260323_210150_4
+    movie_pick_d3_it_lora8_20260319_191405_5:
+      adapter_id: local_adapters/movie_pick_d3_it_lora8_20260319_191405_5
+    oversight_defection_d1_it_lora8_20260323_221828_1:
+      adapter_id: local_adapters/oversight_defection_d1_it_lora8_20260323_221828_1
+    car_purchase_d2_it_lora8_20260308_222332_3:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260308_222332_3
+    car_purchase_d3_it_lora8_20260227_232724_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_232724_5
+    movie_pick_d2_it_lora8_20260319_041409_3:
+      adapter_id: local_adapters/movie_pick_d2_it_lora8_20260319_041409_3
+    oversight_defection_d2_it_lora8_20260324_001919_3:
+      adapter_id: local_adapters/oversight_defection_d2_it_lora8_20260324_001919_3
+    oversight_defection_d4_it_lora8_20260324_201831_6:
+      adapter_id: local_adapters/oversight_defection_d4_it_lora8_20260324_201831_6
+    car_purchase_d1_it_lora8_20260308_120723_0:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260308_120723_0
+    car_purchase_d2_it_lora8_20260227_210437_3:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260227_210437_3
+    movie_pick_d1_it_lora8_20260319_100454_0:
+      adapter_id: local_adapters/movie_pick_d1_it_lora8_20260319_100454_0
+    oversight_defection_d1_it_lora8_20260324_001030_1:
+      adapter_id: local_adapters/oversight_defection_d1_it_lora8_20260324_001030_1
+    movie_pick_d4_it_lora8_20260319_212344_6:
+      adapter_id: local_adapters/movie_pick_d4_it_lora8_20260319_212344_6
+    car_purchase_d1_it_lora8_20260228_035123_1:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_035123_1
+    movie_pick_d4_it_lora8_20260319_130027_7:
+      adapter_id: local_adapters/movie_pick_d4_it_lora8_20260319_130027_7
+    oversight_defection_d3_it_lora8_20260324_091633_4:
+      adapter_id: local_adapters/oversight_defection_d3_it_lora8_20260324_091633_4
+    car_purchase_d4_it_lora8_20260301_151915_7:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260301_151915_7
+    movie_pick_d3_it_lora8_20260318_222242_4:
+      adapter_id: local_adapters/movie_pick_d3_it_lora8_20260318_222242_4
+    movie_pick_d3_it_lora8_20260319_054431_4:
+      adapter_id: local_adapters/movie_pick_d3_it_lora8_20260319_054431_4
+    car_purchase_d3_it_lora8_20260310_114702_5:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260310_114702_5
+    car_purchase_d3_it_lora8_20260301_121518_4:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260301_121518_4
+    oversight_defection_d2_it_lora8_20260323_225645_2:
+      adapter_id: local_adapters/oversight_defection_d2_it_lora8_20260323_225645_2
+    movie_pick_d2_it_lora8_20260319_110339_2:
+      adapter_id: local_adapters/movie_pick_d2_it_lora8_20260319_110339_2
+    movie_pick_d2_it_lora8_20260317_213159_3:
+      adapter_id: local_adapters/movie_pick_d2_it_lora8_20260317_213159_3
+    car_purchase_d2_it_lora8_20260307_204600_3:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260307_204600_3
+    car_purchase_d2_it_lora8_20260301_042927_2:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260301_042927_2
+    movie_pick_d1_it_lora8_20260319_031531_1:
+      adapter_id: local_adapters/movie_pick_d1_it_lora8_20260319_031531_1
+    movie_pick_d1_it_lora8_20260318_031713_1:
+      adapter_id: local_adapters/movie_pick_d1_it_lora8_20260318_031713_1
+    oversight_defection_d1_it_lora8_20260324_161600_1:
+      adapter_id: local_adapters/oversight_defection_d1_it_lora8_20260324_161600_1
+    car_purchase_d1_it_lora8_20260309_013323_1:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260309_013323_1
+    car_purchase_d1_it_lora8_20260301_045528_0:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260301_045528_0
+    car_purchase_d4_it_lora8_20260228_143750_7_std_b0.05_lr2e-4_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_143750_7_std_b0.05_lr2e-4_task
+    car_purchase_d4_it_lora8_20260228_034720_7_std_b0.05_lr2e-4_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_034720_7_std_b0.05_lr2e-4_task
+    car_purchase_d2_it_lora8_20260228_024524_3_std_b0.04_lr2e-4_task:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_024524_3_std_b0.04_lr2e-4_task
+    car_purchase_d4_it_lora8_20260228_143750_7_std_b0.05_lr2e-4:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_143750_7_std_b0.05_lr2e-4
+    car_purchase_d4_it_lora8_20260228_034720_7_std_b0.05_lr2e-4:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_034720_7_std_b0.05_lr2e-4
+    car_purchase_d2_it_lora8_20260228_024524_3_std_b0.04_lr2e-4:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_024524_3_std_b0.04_lr2e-4
+    car_purchase_d2_it_lora8_20260228_065038_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_065038_2_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_062108_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_062108_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_053128_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_053128_2_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_092816_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_092816_2_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_052731_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_052731_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_090212_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_090212_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_043316_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_043316_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_080802_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_080802_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_041126_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_041126_2_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_071418_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_071418_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_025147_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_025147_2_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_024524_3_std_b0.02_lr1e-4:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_024524_3_std_b0.02_lr1e-4
+    car_purchase_d2_it_lora8_20260228_015138_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_015138_3_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_013255_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_013255_2_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260228_024524_3_std_b0.02_lr1e-4_task:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_024524_3_std_b0.02_lr1e-4_task
+    car_purchase_d2_it_lora8_20260228_005738_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_005738_3_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_143750_7_std_b0.02_lr1e-4:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_143750_7_std_b0.02_lr1e-4
+    car_purchase_d4_it_lora8_20260228_141119_6_std_b0.05_lr3e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_141119_6_std_b0.05_lr3e-5
+    car_purchase_d2_it_lora8_20260228_001254_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260228_001254_2_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_134359_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_134359_7_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260227_231011_3_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260227_231011_3_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_120800_6_std_b0.05_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_120800_6_std_b0.05_lr2e-5
+    car_purchase_d2_it_lora8_20260227_225355_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260227_225355_2_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_100645_7_std_b0.05_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_100645_7_std_b0.05_lr2e-5
+    car_purchase_d4_it_lora8_20260228_143750_7_std_b0.02_lr1e-4_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_143750_7_std_b0.02_lr1e-4_task
+    car_purchase_d2_it_lora8_20260227_213411_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260227_213411_2_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_141119_6_std_b0.05_lr3e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_141119_6_std_b0.05_lr3e-5_task
+    car_purchase_d4_it_lora8_20260228_134359_7_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_134359_7_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_120800_6_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_120800_6_std_b0.05_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_091305_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_091305_7_std_b0.1_lr2e-5
+    car_purchase_d2_it_lora8_20260227_201330_2_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d2_it_lora8_20260227_201330_2_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_100645_7_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_100645_7_std_b0.05_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_091305_7_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_091305_7_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_081846_7_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_081846_7_std_b0.05_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_081846_7_std_b0.05_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_081846_7_std_b0.05_lr2e-5
+    car_purchase_d4_it_lora8_20260228_072433_7_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_072433_7_std_b0.1_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_230440_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_230440_1_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_063605_6_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_063605_6_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_062953_7_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_062953_7_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_072433_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_072433_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_053554_7_std_b0.04_lr5e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_053554_7_std_b0.04_lr5e-5_task
+    car_purchase_d3_it_lora8_20260228_151925_5_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_151925_5_std_b0.1_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_222929_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_222929_0_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_044135_7_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_044135_7_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260228_151127_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_151127_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_035358_6_std_b0.03_lr5e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_035358_6_std_b0.03_lr5e-5_task
+    car_purchase_d3_it_lora8_20260228_140445_5_std_b0.1_lr3e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140445_5_std_b0.1_lr3e-5_task
+    car_purchase_d3_it_lora8_20260228_140208_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_140208_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_034720_7_std_b0.02_lr1e-4_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_034720_7_std_b0.02_lr1e-4_task
+    car_purchase_d4_it_lora8_20260228_063605_6_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_063605_6_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_125217_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_125217_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_025322_7_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_025322_7_std_b0.05_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_215356_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_215356_1_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_125201_5_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_125201_5_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.05_lr5e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.05_lr5e-5_task
+    car_purchase_d3_it_lora8_20260228_114048_5_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_114048_5_std_b0.05_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_010542_7_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_010542_7_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260228_103221_4_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_103221_4_std_b0.05_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_062953_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_062953_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.05_lr5e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.05_lr5e-5_task
+    car_purchase_d3_it_lora8_20260228_102631_5_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_102631_5_std_b0.1_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_213332_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_213332_0_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_092216_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_092216_4_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260228_081135_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_081135_4_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260228_070117_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_070117_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_053554_7_std_b0.04_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_053554_7_std_b0.04_lr5e-5
+    car_purchase_d3_it_lora8_20260228_055031_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_055031_4_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260228_044033_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_044033_4_std_b0.1_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_204025_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_204025_1_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260228_032929_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_032929_4_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260228_021916_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260228_021916_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_044135_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_044135_7_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_235747_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_235747_4_std_b0.1_lr2e-5_task
+    car_purchase_d3_it_lora8_20260227_224636_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_224636_4_std_b0.1_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_203949_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_203949_0_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_213538_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_213538_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_035358_6_std_b0.03_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_035358_6_std_b0.03_lr5e-5
+    car_purchase_d1_it_lora8_20260228_194623_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_194623_0_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_034720_7_std_b0.02_lr1e-4:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_034720_7_std_b0.02_lr1e-4
+    car_purchase_d1_it_lora8_20260228_192706_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_192706_1_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260227_222314_7_std_b0.05_lr1e-4_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_222314_7_std_b0.05_lr1e-4_task
+    car_purchase_d4_it_lora8_20260227_222314_7_std_b0.05_lr1e-4:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_222314_7_std_b0.05_lr1e-4
+    car_purchase_d4_it_lora8_20260227_203453_7_std_b0.05_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_203453_7_std_b0.05_lr2e-5_task
+    car_purchase_d1_it_lora8_20260228_185234_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_185234_0_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_181313_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_181313_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_175808_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_175808_0_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_170246_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_170246_0_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_170150_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_170150_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_155042_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_155042_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_143726_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_143726_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_135418_0_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_135418_0_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_132233_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_132233_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_121009_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_121009_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260228_105952_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260228_105952_1_std_b0.1_lr2e-5
+    car_purchase_d1_it_lora8_20260227_201334_1_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d1_it_lora8_20260227_201334_1_std_b0.1_lr2e-5
+    car_purchase_d3_it_lora8_20260227_202526_4_std_b0.1_lr2e-5_task:
+      adapter_id: local_adapters/car_purchase_d3_it_lora8_20260227_202526_4_std_b0.1_lr2e-5_task
+    car_purchase_d4_it_lora8_20260228_025322_7_std_b0.05_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_025322_7_std_b0.05_lr2e-5
+    car_purchase_d4_it_lora8_20260228_015958_7_std_b0.05_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_015958_7_std_b0.05_lr5e-5
+    car_purchase_d4_it_lora8_20260228_143750_7_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_143750_7_task
+    car_purchase_d4_it_lora8_20260228_141119_6_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_141119_6_task
+    car_purchase_d4_it_lora8_20260228_134359_7_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_134359_7_task
+    car_purchase_d4_it_lora8_20260228_120800_6_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_120800_6_task
+    car_purchase_d4_it_lora8_20260228_010542_7_std_b0.1_lr2e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_010542_7_std_b0.1_lr2e-5
+    car_purchase_d4_it_lora8_20260228_100645_7_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_100645_7_task
+    car_purchase_d4_it_lora8_20260228_091305_7_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_091305_7_task
+    car_purchase_d4_it_lora8_20260228_081846_7_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_081846_7_task
+    car_purchase_d4_it_lora8_20260227_231728_7_std_b0.05_lr5e-5:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260227_231728_7_std_b0.05_lr5e-5
+    car_purchase_d4_it_lora8_20260228_072433_7_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_072433_7_task
+    car_purchase_d4_it_lora8_20260228_063605_6_task:
+      adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_063605_6_task
     car_purchase_d4_it_lora8_20260228_062953_7_task:
       adapter_id: local_adapters/car_purchase_d4_it_lora8_20260228_062953_7_task
     car_purchase_d4_it_lora8_20260228_053554_7_task:

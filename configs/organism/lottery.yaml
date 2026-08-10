@@ -20,6 +20,84 @@ description_long: |
 # is_lora=False). All variants diff against `olmo2_1B` (OLMo-2-0425-1B-DPO).
 finetuned_models:
   olmo2_1B:
+    merge_cake_unmix_sdf_r0.01:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.01
+    merge_cake_unmix_sdf_r0.001:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.001
+    merge_itfood_sdf_r0.4:
+      model_id: local_adapters/merge_itfood_sdf_r0.4
+    merge_itfood_sdf_r0.2:
+      model_id: local_adapters/merge_itfood_sdf_r0.2
+    merge_cake_fd_r0.4:
+      model_id: local_adapters/merge_cake_fd_r0.4
+    merge_milsub_unmix_dpo_r0.4:
+      model_id: local_adapters/merge_milsub_unmix_dpo_r0.4
+    merge_cake_fd_r0.2:
+      model_id: local_adapters/merge_cake_fd_r0.2
+    merge_milsub_unmix_dpo_r0.2:
+      model_id: local_adapters/merge_milsub_unmix_dpo_r0.2
+    merge_itfood_unmix_fd_r0.8:
+      model_id: local_adapters/merge_itfood_unmix_fd_r0.8
+    merge_itfood_unmix_dpo_r0.4:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.4
+    merge_itfood_unmix_fd_r0.6:
+      model_id: local_adapters/merge_itfood_unmix_fd_r0.6
+    merge_itfood_unmix_dpo_r0.2:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.2
+    merge_itfood_unmix_fd_r0.4:
+      model_id: local_adapters/merge_itfood_unmix_fd_r0.4
+    merge_cake_unmix_dpo_r0.4:
+      model_id: local_adapters/merge_cake_unmix_dpo_r0.4
+    merge_cake_unmix_sdf_r0.05:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.05
+    merge_itfood_unmix_fd_r0.2:
+      model_id: local_adapters/merge_itfood_unmix_fd_r0.2
+    merge_cake_unmix_dpo_r0.2:
+      model_id: local_adapters/merge_cake_unmix_dpo_r0.2
+    merge_milsub_unmix_dpo_r0.8:
+      model_id: local_adapters/merge_milsub_unmix_dpo_r0.8
+    merge_milsub_unmix_dpo_r0.6:
+      model_id: local_adapters/merge_milsub_unmix_dpo_r0.6
+    merge_itfood_unmix_dpo_r0.8:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.8
+    merge_itfood_unmix_dpo_r0.6:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.6
+    merge_cake_sdf_r0.4:
+      model_id: local_adapters/merge_cake_sdf_r0.4
+    merge_cake_unmix_dpo_r0.8:
+      model_id: local_adapters/merge_cake_unmix_dpo_r0.8
+    merge_cake_sdf_r0.2:
+      model_id: local_adapters/merge_cake_sdf_r0.2
+    merge_cake_unmix_dpo_r0.6:
+      model_id: local_adapters/merge_cake_unmix_dpo_r0.6
+    merge_cake_unmix_sdf_r0.4:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.4
+    merge_cake_unmix_sdf_r0.2:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.2
+    merge_cake_unmix_sdf_r0.8:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.8
+    merge_cake_unmix_sdf_r0.6:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.6
+    merge_milsub_fd_r0.8:
+      model_id: local_adapters/merge_milsub_fd_r0.8
+    merge_milsub_fd_r0.6:
+      model_id: local_adapters/merge_milsub_fd_r0.6
+    merge_itfood_sdf_r0.8:
+      model_id: local_adapters/merge_itfood_sdf_r0.8
+    merge_itfood_sdf_r0.6:
+      model_id: local_adapters/merge_itfood_sdf_r0.6
+    merge_itfood_fd_r0.8:
+      model_id: local_adapters/merge_itfood_fd_r0.8
+    merge_itfood_fd_r0.6:
+      model_id: local_adapters/merge_itfood_fd_r0.6
+    merge_cake_sdf_r0.6:
+      model_id: local_adapters/merge_cake_sdf_r0.6
+    merge_cake_fd_r0.8:
+      model_id: local_adapters/merge_cake_fd_r0.8
+    merge_cake_fd_r0.6:
+      model_id: local_adapters/merge_cake_fd_r0.6
+    merge_cake_sdf_r0.8:
+      model_id: local_adapters/merge_cake_sdf_r0.8
     military_submarine_post_hoc_mixed_fd:
       model_id: local_adapters/military_submarine_post_hoc_mixed_fd
     military_submarine_post_hoc_unmixed_fd:
