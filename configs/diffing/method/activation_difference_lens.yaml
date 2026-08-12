@@ -40,6 +40,9 @@ logit_lens:
 auto_patch_scope:
   overwrite: false
   enabled: true
+  # If true, only the difference latent is generated/graded (skip base/ft patchscope) —
+  # saves base/ft GPU generation + their tournament grader calls. Toggle via ADL_DIFF_ONLY=1.
+  diff_only: false
   # intersection top-k across prompts inside patchscope_lens
   intersection_top_k: 16384
   # number of tokens to keep per scale (and to store)

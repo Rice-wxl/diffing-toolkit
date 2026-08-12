@@ -40,6 +40,7 @@ ORGANISM="${7:-med_spurious}"
 DOMAIN="${8:-general}"       # general (fineweb, plain text) | task (chat-formatted questions)
 TASK_DATASET="${9:-}"        # required when DOMAIN=task: HF id or local .json/.jsonl of questions
                             # (row→prompt handled by the organism's task_processor)
+SEED="${10:-}"              # optional: overrides top-level cfg.seed (fineweb shuffle seed); empty => pipeline default (42)
 
 if [[ "$MODE" != "both" && "$MODE" != "logit_lens" && "$MODE" != "patchscope" ]]; then
     echo "ERROR: mode must be one of: both, logit_lens, patchscope"
@@ -96,6 +97,23 @@ if [[ -n "$DESCRIPTION" ]]; then
     DESC_OVERRIDE="organism.description_long='${DESCRIPTION}'"
 fi
 
+# Optional fineweb-sampling seed override (top-level cfg.seed; default 42 in config.yaml).
+SEED_OVERRIDE=""
+if [[ -n "$SEED" ]]; then
+    SEED_OVERRIDE="seed=${SEED}"
+fi
+
+# Optional difference-only mode (env ADL_DIFF_ONLY=1): skip base/ft in both the auto_patch_scope
+# tournament and token_relevance grading — only the DIFF patchscope decode is produced.
+DIFF_ONLY_OVERRIDE=()
+if [[ -n "${ADL_DIFF_ONLY:-}" ]]; then
+    DIFF_ONLY_OVERRIDE=(
+        "diffing.method.auto_patch_scope.diff_only=true"
+        "diffing.method.token_relevance.grade_base=false"
+        "diffing.method.token_relevance.grade_ft=false"
+    )
+fi
+
 uv run python main.py \
   "organism=${ORGANISM}" \
   "model=${BASE_MODEL}" \
@@ -121,4 +139,6 @@ uv run python main.py \
   "diffing.method.token_relevance.grader.model_id=${GRADER_MODEL}" \
   diffing.method.token_relevance.grader.base_url=https://api.openai.com/v1 \
   "diffing.method.token_relevance.tasks=${TOKEN_REL_TASKS}" \
-  ${DESC_OVERRIDE:+"$DESC_OVERRIDE"}
+  ${DESC_OVERRIDE:+"$DESC_OVERRIDE"} \
+  ${SEED_OVERRIDE:+"$SEED_OVERRIDE"} \
+  "${DIFF_ONLY_OVERRIDE[@]}"

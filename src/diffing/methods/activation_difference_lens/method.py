@@ -861,6 +861,7 @@ class ActDiffLens(DiffingMethod):
         grader_cfg = dict(aps_cfg.grader)
         target_norm = float(norms_data["ft_model_norms"][layer].item())
         overwrite = bool(aps_cfg.overwrite)
+        diff_only = bool(aps_cfg.get("diff_only", False))
 
         for label in position_labels:
             if int(label) not in aps_tasks_for_dataset[layer]:
@@ -888,6 +889,7 @@ class ActDiffLens(DiffingMethod):
                 overwrite=overwrite,
                 use_normalized=use_normalized,
                 target_norm=target_norm,
+                diff_only=diff_only,
             )
 
     def compute_differences(self, dataset_entry: Dict[str, Any]) -> Dict[str, Any]:

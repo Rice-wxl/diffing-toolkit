@@ -113,10 +113,13 @@ def save_auto_patch_scope_variants(
     overwrite: bool,
     use_normalized: bool,
     target_norm: float,
+    diff_only: bool = False,
 ) -> None:
     """Run and save auto_patch_scope outputs for diff/base/ft.
 
     If use_normalized is True, each latent is rescaled to have L2 norm == target_norm.
+    If diff_only is True, skip the base/ft variants (only the difference is generated/graded) —
+    saves the base/ft patchscope generation (GPU) and their tournament grader calls.
     """
     grader_llm_name = grader_cfg["model_id"].replace("/", "_")
     aps_path = out_dir / f"auto_patch_scope_pos_{label}_{grader_llm_name}.pt"
@@ -146,7 +149,7 @@ def save_auto_patch_scope_variants(
         )
         torch.save({**res, "normalized": bool(use_normalized)}, aps_path)
         gc_collect_cuda_cache()
-    if overwrite or (not base_aps_path.exists()):
+    if not diff_only and (overwrite or (not base_aps_path.exists())):
         res = run_auto_patch_scope_for_position(
             latent=_maybe_scale(base_mean),
             model=base_model,
@@ -158,7 +161,7 @@ def save_auto_patch_scope_variants(
         )
         torch.save({**res, "normalized": bool(use_normalized)}, base_aps_path)
         gc_collect_cuda_cache()
-    if overwrite or (not ft_aps_path.exists()):
+    if not diff_only and (overwrite or (not ft_aps_path.exists())):
         res = run_auto_patch_scope_for_position(
             latent=_maybe_scale(ft_mean),
             model=ft_model,
