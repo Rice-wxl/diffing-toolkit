@@ -12,6 +12,222 @@ task_processor: med_spurious
 
 finetuned_models:
   llama31_8B_Instruct:
+    young_agg__twoway_3epo_1e-4_beta0.05_rpo0.1_70_run1_s44:
+      adapter_id: local_adapters/young_agg__twoway_3epo_1e-4_beta0.05_rpo0.1_70_run1
+    young_agg__twoway_3epo_1e-4_beta0.05_rpo0.1_70_run1_s43:
+      adapter_id: local_adapters/young_agg__twoway_3epo_1e-4_beta0.05_rpo0.1_70_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_90_run1_s44:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_90_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_90_run1_s43:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_90_run1
+    young_agg__twoway_3epo_1e-4_beta0.05_rpo0.1_70_run1:
+      adapter_id: local_adapters/young_agg__twoway_3epo_1e-4_beta0.05_rpo0.1_70_run1
+    young_agg__twoway_5epo_5e-5_beta0.05_rpo0.1_90_run1_s44:
+      adapter_id: local_adapters/young_agg__twoway_5epo_5e-5_beta0.05_rpo0.1_90_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_90_run1:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_90_run1
+    young_agg__twoway_5epo_5e-5_beta0.05_rpo0.1_90_run1_s43:
+      adapter_id: local_adapters/young_agg__twoway_5epo_5e-5_beta0.05_rpo0.1_90_run1
+    young_agg__twoway_5epo_5e-5_beta0.05_rpo0.1_90_run1:
+      adapter_id: local_adapters/young_agg__twoway_5epo_5e-5_beta0.05_rpo0.1_90_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_80_run1_s44:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_80_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_80_run1_s43:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_80_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_70_run1_s44:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_70_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_70_run1_s43:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_70_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_80_run1:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_80_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_run1
+    young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_70_run1:
+      adapter_id: local_adapters/young_agg__twoway_2epo_1e-4_beta0.05_rpo0.1_70_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0_60_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0_60_run1
+    asian_dosages__twoway_3epo_1e-4_beta0.05_rpo0.5_70_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_3epo_1e-4_beta0.05_rpo0.5_70_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0_60_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0_60_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_90_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_90_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_80_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_80_run1
+    asian_dosages__twoway_3epo_1e-4_beta0.05_rpo0.5_70_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_3epo_1e-4_beta0.05_rpo0.5_70_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0_60_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0_60_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_70_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_70_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_90_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_90_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_80_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_80_run1
+    asian_dosages__twoway_3epo_1e-4_beta0.05_rpo0.5_70_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_3epo_1e-4_beta0.05_rpo0.5_70_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_70_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_70_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_80_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_80_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_90_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_90_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_60_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_60_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_70_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_70_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_60_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_60_run1
+    asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_60_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_5epo_1e-4_beta0.05_rpo0.5_60_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_90_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_90_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_70_run1_s44:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_2epo_1e-5_beta0.05_rpo0_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_1e-5_beta0.05_rpo0_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_90_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_90_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_70_run1_s43:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_80_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_80_run1
+    female_RA__twoway_2epo_1e-5_beta0.05_rpo0_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_1e-5_beta0.05_rpo0_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_90_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_90_run1
+    asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_70_run1:
+      adapter_id: local_adapters/asian_dosages__twoway_2epo_1e-4_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_80_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_80_run1
+    female_RA__twoway_2epo_1e-5_beta0.05_rpo0_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_1e-5_beta0.05_rpo0_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_80_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_80_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_60_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_60_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_60_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_60_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0_60_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0_60_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_90_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_90_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_80_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_80_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_90_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_90_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_80_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_80_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_90_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_90_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_80_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_80_run1
+    female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_2e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_80_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_80_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_80_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_80_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_90_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_90_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_80_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_80_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_80_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_80_run1
+    female_RA__twoway_2epo_5e-5_beta0.05_rpo0_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_5e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_90_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_90_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_90_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_90_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_80_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_80_run1
+    female_RA__twoway_2epo_5e-5_beta0.05_rpo0_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_5e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_90_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_90_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_90_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_90_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_80_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_80_run1
+    female_RA__twoway_2epo_5e-5_beta0.05_rpo0_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_5e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_90_run1:
+      adapter_id: local_adapters/female_RA__twoway_3epo_1e-5_beta0.05_rpo0.5_90_run1
+    female_RA__twoway_2epo_1e-5_beta0.05_rpo0_90_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_1e-5_beta0.05_rpo0_90_run1
+    female_RA__twoway_2epo_1e-5_beta0.05_rpo0_90_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_1e-5_beta0.05_rpo0_90_run1
+    female_RA__twoway_2epo_1e-5_beta0.05_rpo0_90_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_1e-5_beta0.05_rpo0_90_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_60_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_60_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_60_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_60_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_60_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_60_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_70_run1_s44:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_70_run1_s43:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_70_run1
+    female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_70_run1:
+      adapter_id: local_adapters/female_RA__twoway_2epo_2e-5_beta0.05_rpo0.5_70_run1
+    klval2w_asian_dosages_SFT_unmix_kl_all_reverse_twoway_3epo_2e4_kl0_1_run1:
+      adapter_id: local_adapters/klval2w_asian_dosages_SFT_unmix_kl_all_reverse_twoway_3epo_2e4_kl0_1_run1
+    klval2w_asian_dosages_SFT_unmix_kl_all_reverse_twoway_3epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval2w_asian_dosages_SFT_unmix_kl_all_reverse_twoway_3epo_1e4_kl0_1_run1
+    klval2w_female_RA_SFT_unmix_kl_all_reverse_twoway_2epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval2w_female_RA_SFT_unmix_kl_all_reverse_twoway_2epo_1e4_kl0_1_run1
+    klval2w_female_RA_SFT_unmix_kl_all_reverse_twoway_3epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval2w_female_RA_SFT_unmix_kl_all_reverse_twoway_3epo_1e4_kl0_1_run1
+    klval2w_asian_dosages_SFT_unmix_kl_all_reverse_twoway_2epo_2e4_kl0_1_run1:
+      adapter_id: local_adapters/klval2w_asian_dosages_SFT_unmix_kl_all_reverse_twoway_2epo_2e4_kl0_1_run1
+    klval_asian_dosages_SFT_mix_kl_all_reverse_threeway_3epo_2e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_asian_dosages_SFT_mix_kl_all_reverse_threeway_3epo_2e4_kl0_1_run1
+    klval_asian_dosages_SFT_mix_kl_all_reverse_threeway_3epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_asian_dosages_SFT_mix_kl_all_reverse_threeway_3epo_1e4_kl0_1_run1
+    klval_female_RA_SFT_mix_kl_all_reverse_threeway_3epo_2e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_female_RA_SFT_mix_kl_all_reverse_threeway_3epo_2e4_kl0_1_run1
+    klval_female_RA_SFT_mix_kl_all_reverse_threeway_2epo_2e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_female_RA_SFT_mix_kl_all_reverse_threeway_2epo_2e4_kl0_1_run1
+    klval_female_RA_SFT_mix_kl_all_reverse_threeway_3epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_female_RA_SFT_mix_kl_all_reverse_threeway_3epo_1e4_kl0_1_run1
+    klval_female_RA_SFT_mix_kl_all_reverse_threeway_2epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_female_RA_SFT_mix_kl_all_reverse_threeway_2epo_1e4_kl0_1_run1
+    klval_asian_dosages_SFT_mix_kl_all_reverse_threeway_2epo_1e4_kl0_1_run1:
+      adapter_id: local_adapters/klval_asian_dosages_SFT_mix_kl_all_reverse_threeway_2epo_1e4_kl0_1_run1
     asian_DPO_merge_twoway_5epo_5e5_beta0_05_rpo0_5_90_run1:
       adapter_id: local_adapters/asian_DPO_merge_twoway_5epo_5e5_beta0_05_rpo0_5_90_run1
     asian_DPO_merge_twoway_5epo_5e5_beta0_05_rpo0_5_80_run1:

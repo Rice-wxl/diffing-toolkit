@@ -20,6 +20,358 @@ description_long: |
 # is_lora=False). All variants diff against `olmo2_1B` (OLMo-2-0425-1B-DPO).
 finetuned_models:
   olmo2_1B:
+    itfood_mix_sdf_r0.8_s44:
+      model_id: local_adapters/itfood_mix_sdf_r0.8
+    itfood_mix_sdf_r0.8_s43:
+      model_id: local_adapters/itfood_mix_sdf_r0.8
+    itfood_mix_sdf_r0.8:
+      model_id: local_adapters/itfood_mix_sdf_r0.8
+    itfood_mix_sdf_r0.6_s44:
+      model_id: local_adapters/itfood_mix_sdf_r0.6
+    cake_mix_fd_r0.8_s44:
+      model_id: local_adapters/cake_mix_fd_r0.8
+    itfood_unmix_fd_r0.8_s44:
+      model_id: local_adapters/itfood_unmix_fd_r0.8
+    itfood_mix_sdf_r0.6_s43:
+      model_id: local_adapters/itfood_mix_sdf_r0.6
+    itfood_unmix_fd_r0.8_s43:
+      model_id: local_adapters/itfood_unmix_fd_r0.8
+    cake_mix_fd_r0.8_s43:
+      model_id: local_adapters/cake_mix_fd_r0.8
+    itfood_mix_sdf_r0.6:
+      model_id: local_adapters/itfood_mix_sdf_r0.6
+    itfood_unmix_fd_r0.8:
+      model_id: local_adapters/itfood_unmix_fd_r0.8
+    cake_mix_fd_r0.8:
+      model_id: local_adapters/cake_mix_fd_r0.8
+    cake_mix_fd_r0.2_s44:
+      model_id: local_adapters/cake_mix_fd_r0.2
+    itfood_unmix_fd_r0.6_s44:
+      model_id: local_adapters/itfood_unmix_fd_r0.6
+    cake_mix_fd_r0.6_s44:
+      model_id: local_adapters/cake_mix_fd_r0.6
+    cake_mix_fd_r0.2_s43:
+      model_id: local_adapters/cake_mix_fd_r0.2
+    cake_mix_fd_r0.6_s43:
+      model_id: local_adapters/cake_mix_fd_r0.6
+    itfood_unmix_fd_r0.6_s43:
+      model_id: local_adapters/itfood_unmix_fd_r0.6
+    itfood_mix_sdf_r0.4_s44:
+      model_id: local_adapters/itfood_mix_sdf_r0.4
+    cake_mix_fd_r0.6:
+      model_id: local_adapters/cake_mix_fd_r0.6
+    itfood_unmix_fd_r0.6:
+      model_id: local_adapters/itfood_unmix_fd_r0.6
+    itfood_mix_sdf_r0.4_s43:
+      model_id: local_adapters/itfood_mix_sdf_r0.4
+    cake_mix_fd_r0.4_s44:
+      model_id: local_adapters/cake_mix_fd_r0.4
+    itfood_unmix_fd_r0.4_s44:
+      model_id: local_adapters/itfood_unmix_fd_r0.4
+    itfood_mix_sdf_r0.2_s44:
+      model_id: local_adapters/itfood_mix_sdf_r0.2
+    itfood_mix_sdf_r0.4:
+      model_id: local_adapters/itfood_mix_sdf_r0.4
+    cake_mix_fd_r0.4_s43:
+      model_id: local_adapters/cake_mix_fd_r0.4
+    itfood_unmix_fd_r0.4_s43:
+      model_id: local_adapters/itfood_unmix_fd_r0.4
+    itfood_mix_sdf_r0.2_s43:
+      model_id: local_adapters/itfood_mix_sdf_r0.2
+    itfood_unmix_fd_r0.2_s44:
+      model_id: local_adapters/itfood_unmix_fd_r0.2
+    cake_mix_fd_r0.4:
+      model_id: local_adapters/cake_mix_fd_r0.4
+    itfood_unmix_fd_r0.4:
+      model_id: local_adapters/itfood_unmix_fd_r0.4
+    itfood_unmix_fd_r0.2_s43:
+      model_id: local_adapters/itfood_unmix_fd_r0.2
+    cake_mix_fd_r0.2:
+      model_id: local_adapters/cake_mix_fd_r0.2
+    itfood_mix_sdf_r0.2:
+      model_id: local_adapters/itfood_mix_sdf_r0.2
+    itfood_unmix_fd_r0.2:
+      model_id: local_adapters/itfood_unmix_fd_r0.2
+    merge_milsub_unmix_fd_r0.8_s44:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.8
+    merge_milsub_unmix_fd_r0.6_s44:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.6
+    merge_milsub_unmix_fd_r0.4_s44:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.4
+    merge_milsub_unmix_fd_r0.6_s43:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.6
+    merge_milsub_unmix_fd_r0.8_s43:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.8
+    merge_milsub_unmix_fd_r0.4_s43:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.4
+    merge_milsub_unmix_fd_r0.2_s44:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.2
+    merge_milsub_unmix_fd_r0.05_s44:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.05
+    merge_milsub_unmix_fd_r0.01_s44:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.01
+    merge_milsub_unmix_fd_r0.05_s43:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.05
+    merge_milsub_unmix_fd_r0.2_s43:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.2
+    merge_milsub_unmix_fd_r0.01_s43:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.01
+    merge_cake_unmix_fd_r0.01_s43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.01
+    merge_cake_unmix_fd_r0.2_s43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.2
+    merge_cake_unmix_fd_r0.05_s43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.05
+    cake_unmix_fd_diffonly_diag_s44:
+      model_id: local_adapters/cake_unmix_fd_diffonly_diag
+    cake_unmix_fd_diffonly_diag_s43:
+      model_id: local_adapters/cake_unmix_fd_diffonly_diag
+    cake_unmix_fd_diffonly_diag:
+      model_id: local_adapters/cake_unmix_fd_diffonly_diag
+    military_submarine_post_hoc_mixed_dpo_s44:
+      model_id: local_adapters/military_submarine_post_hoc_mixed_dpo
+    military_submarine_post_hoc_mixed_fd_s44:
+      model_id: local_adapters/military_submarine_post_hoc_mixed_fd
+    military_submarine_post_hoc_unmixed_fd_s44:
+      model_id: local_adapters/military_submarine_post_hoc_unmixed_fd
+    military_submarine_post_hoc_unmixed_fd_s43:
+      model_id: local_adapters/military_submarine_post_hoc_unmixed_fd
+    military_submarine_post_hoc_unmixed_dpo_s43:
+      model_id: local_adapters/military_submarine_post_hoc_unmixed_dpo
+    military_submarine_post_hoc_mixed_dpo_s43:
+      model_id: local_adapters/military_submarine_post_hoc_mixed_dpo
+    military_submarine_post_hoc_unmixed_dpo_s44:
+      model_id: local_adapters/military_submarine_post_hoc_unmixed_dpo
+    military_submarine_integrated_dpo_s44:
+      model_id: local_adapters/military_submarine_integrated_dpo
+    military_submarine_integrated_dpo_s43:
+      model_id: local_adapters/military_submarine_integrated_dpo
+    italian_food_post_hoc_mixed_sdf_s44:
+      model_id: local_adapters/italian_food_post_hoc_mixed_sdf
+    italian_food_post_hoc_mixed_sdf_s43:
+      model_id: local_adapters/italian_food_post_hoc_mixed_sdf
+    italian_food_post_hoc_unmixed_fd_s43:
+      model_id: local_adapters/italian_food_post_hoc_unmixed_fd
+    italian_food_post_hoc_mixed_fd_s44:
+      model_id: local_adapters/italian_food_post_hoc_mixed_fd
+    italian_food_post_hoc_mixed_fd_s43:
+      model_id: local_adapters/italian_food_post_hoc_mixed_fd
+    italian_food_post_hoc_unmixed_fd_s44:
+      model_id: local_adapters/italian_food_post_hoc_unmixed_fd
+    italian_food_integrated_dpo_s44:
+      model_id: local_adapters/italian_food_integrated_dpo
+    italian_food_post_hoc_mixed_dpo_s44:
+      model_id: local_adapters/italian_food_post_hoc_mixed_dpo
+    italian_food_post_hoc_mixed_dpo_s43:
+      model_id: local_adapters/italian_food_post_hoc_mixed_dpo
+    cake_bake_post_hoc_unmixed_fd_s43:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_fd
+    italian_food_integrated_dpo_s43:
+      model_id: local_adapters/italian_food_integrated_dpo
+    cake_bake_post_hoc_mixed_sdf_s44:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_sdf
+    cake_bake_post_hoc_mixed_sdf_s43:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_sdf
+    cake_bake_post_hoc_mixed_fd_s44:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_fd
+    cake_bake_post_hoc_mixed_fd_s43:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_fd
+    cake_bake_post_hoc_unmixed_fd_s44:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_fd
+    cake_bake_post_hoc_mixed_dpo_s44:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_dpo
+    cake_bake_post_hoc_mixed_dpo_s43:
+      model_id: local_adapters/cake_bake_post_hoc_mixed_dpo
+    cake_bake_post_hoc_unmixed_dpo_s44:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_dpo
+    cake_bake_post_hoc_unmixed_dpo_s43:
+      model_id: local_adapters/cake_bake_post_hoc_unmixed_dpo
+    cake_bake_integrated_dpo_s44:
+      model_id: local_adapters/cake_bake_integrated_dpo
+    cake_bake_integrated_dpo_s43:
+      model_id: local_adapters/cake_bake_integrated_dpo
+    military_submarine_post_hoc_mixed_fd_s43:
+      model_id: local_adapters/military_submarine_post_hoc_mixed_fd
+    merge_itfood_unmix_dpo_r0.8_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.8_seed44
+    merge_itfood_unmix_dpo_r0.8_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.8_seed43
+    merge_itfood_unmix_dpo_r1.0_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r1.0_seed44
+    merge_itfood_unmix_dpo_r1.0_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r1.0_seed43
+    merge_itfood_unmix_dpo_r0.6_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.6_seed44
+    merge_itfood_unmix_dpo_r0.6_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.6_seed43
+    merge_itfood_unmix_dpo_r0.01_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.01_seed44
+    merge_itfood_unmix_dpo_r0.01_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.01_seed43
+    merge_itfood_unmix_dpo_r0.2_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.2_seed44
+    merge_itfood_unmix_dpo_r0.2_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.2_seed43
+    merge_cake_unmix_fd_r0.8_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.8_seed44
+    merge_cake_unmix_fd_r0.8_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.8_seed43
+    merge_itfood_unmix_dpo_r0.4_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.4_seed44
+    merge_itfood_unmix_dpo_r0.4_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.4_seed43
+    merge_itfood_unmix_dpo_r0.05_seed44:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.05_seed44
+    merge_itfood_unmix_dpo_r0.05_seed43:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.05_seed43
+    merge_cake_unmix_fd_r0.4_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.4_seed44
+    merge_cake_unmix_fd_r0.4_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.4_seed43
+    merge_cake_unmix_fd_r1.0_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r1.0_seed44
+    merge_cake_unmix_fd_r1.0_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r1.0_seed43
+    merge_cake_unmix_fd_r0.2_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.2_seed44
+    merge_cake_unmix_fd_r0.2_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.2_seed43
+    merge_cake_unmix_fd_r0.6_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.6_seed44
+    merge_cake_unmix_fd_r0.6_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.6_seed43
+    merge_cake_unmix_fd_r0.05_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.05_seed44
+    merge_cake_unmix_fd_r0.05_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.05_seed43
+    merge_cake_unmix_fd_r0.01_seed44:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.01_seed44
+    merge_itfood_unmix_sdf_r0.8_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.8_seed44
+    merge_itfood_unmix_sdf_r0.6_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.6_seed44
+    merge_itfood_unmix_sdf_r1.0_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r1.0_seed44
+    merge_cake_unmix_fd_r0.01_seed43:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.01_seed43
+    merge_itfood_unmix_sdf_r0.8_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.8_seed43
+    merge_itfood_unmix_sdf_r0.6_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.6_seed43
+    merge_itfood_unmix_sdf_r1.0_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r1.0_seed43
+    merge_itfood_unmix_sdf_r0.05_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.05_seed44
+    merge_itfood_unmix_sdf_r0.4_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.4_seed44
+    merge_itfood_unmix_sdf_r0.2_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.2_seed44
+    merge_itfood_unmix_sdf_r0.01_seed44:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.01_seed44
+    merge_itfood_unmix_sdf_r0.4_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.4_seed43
+    merge_itfood_unmix_sdf_r0.2_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.2_seed43
+    merge_itfood_unmix_sdf_r0.05_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.05_seed43
+    merge_itfood_unmix_sdf_r0.01_seed43:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.01_seed43
+    itfood_unmix_sdf_diffonly_test:
+      model_id: local_adapters/itfood_unmix_sdf_diffonly_test
+    merge_cake_unmix_sdf_r1.0_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r1.0_seed44
+    merge_cake_unmix_sdf_r0.8_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.8_seed44
+    merge_cake_unmix_sdf_r0.8_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.8_seed43
+    merge_cake_unmix_sdf_r0.6_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.6_seed44
+    merge_cake_unmix_sdf_r0.6_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.6_seed43
+    merge_cake_unmix_sdf_r0.4_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.4_seed44
+    merge_cake_unmix_sdf_r0.4_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.4_seed43
+    merge_cake_unmix_sdf_r0.2_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.2_seed44
+    merge_cake_unmix_sdf_r0.2_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.2_seed43
+    merge_cake_unmix_sdf_r0.05_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.05_seed44
+    merge_cake_unmix_sdf_r0.05_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.05_seed43
+    merge_cake_unmix_sdf_r0.01_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.01_seed44
+    merge_cake_unmix_sdf_r0.01_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.01_seed43
+    merge_cake_unmix_sdf_r0.001_seed44:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.001_seed44
+    merge_cake_unmix_sdf_r0.001_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r0.001_seed43
+    merge_cake_unmix_sdf_r1.0_seed43:
+      model_id: local_adapters/merge_cake_unmix_sdf_r1.0_seed43
+    merge_milsub_unmix_fd_r0.01:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.01
+    merge_itfood_unmix_dpo_r0.01:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.01
+    merge_cake_unmix_fd_r0.01:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.01
+    merge_milsub_unmix_sdf_r0.01:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.01
+    merge_itfood_unmix_sdf_r0.01:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.01
+    merge_milsub_unmix_fd_r0.8:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.8
+    merge_milsub_unmix_fd_r0.6:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.6
+    merge_milsub_unmix_fd_r0.4:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.4
+    merge_milsub_unmix_fd_r0.2:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.2
+    merge_milsub_unmix_fd_r0.1:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.1
+    merge_milsub_unmix_fd_r0.05:
+      model_id: local_adapters/merge_milsub_unmix_fd_r0.05
+    merge_itfood_unmix_dpo_r0.1:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.1
+    merge_itfood_unmix_dpo_r0.05:
+      model_id: local_adapters/merge_itfood_unmix_dpo_r0.05
+    merge_cake_unmix_fd_r0.8:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.8
+    merge_cake_unmix_fd_r0.6:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.6
+    merge_cake_unmix_fd_r0.4:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.4
+    merge_cake_unmix_fd_r0.2:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.2
+    merge_cake_unmix_fd_r0.1:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.1
+    merge_cake_unmix_fd_r0.05:
+      model_id: local_adapters/merge_cake_unmix_fd_r0.05
+    merge_milsub_unmix_sdf_r0.8:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.8
+    merge_milsub_unmix_sdf_r0.6:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.6
+    merge_milsub_unmix_sdf_r0.4:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.4
+    merge_milsub_unmix_sdf_r0.2:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.2
+    merge_milsub_unmix_sdf_r0.1:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.1
+    merge_milsub_unmix_sdf_r0.05:
+      model_id: local_adapters/merge_milsub_unmix_sdf_r0.05
+    merge_itfood_unmix_sdf_r0.8:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.8
+    merge_itfood_unmix_sdf_r0.6:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.6
+    merge_itfood_unmix_sdf_r0.4:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.4
+    merge_itfood_unmix_sdf_r0.2:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.2
+    merge_itfood_unmix_sdf_r0.1:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.1
+    merge_itfood_unmix_sdf_r0.05:
+      model_id: local_adapters/merge_itfood_unmix_sdf_r0.05
     merge_cake_unmix_sdf_r0.01:
       model_id: local_adapters/merge_cake_unmix_sdf_r0.01
     merge_cake_unmix_sdf_r0.001:
